@@ -1,0 +1,34 @@
+// if not already existing :
+// git init
+
+cd existing_repo
+git remote add origin https://gitlabsu.sorbonne-universite.fr/lu2in013/fev2026/gr6/runforlife.git
+git branch -M main
+git push -uf origin main // Fonctionne pas à cause de la clé ssh
+
+git add . // ajoute tous les fichier
+git commit -m "Nom du commit" // crée le commit
+git branch -M main // Renome la branche en main si besoin
+
+git pull origin main --allow-unrelated-histories //Si une fenetre de cmde s'ouvre, taper :wq
+git push -u origin main
+
+// modification de fichier
+git add <fichier_modifie> // ajoute les changement
+git commit -m "Modification ..." // crée le commit local
+git push // envoie sur gitlab
+
+// lancer le virtual environnement
+venv313\Scripts\activate
+
+// lancer le programme
+python runforlife_demo.py
+
+// afficher les graph
+python mort.py & python graph.py & python runner.py & 
+
+// Sortir du venv
+deactivate
+
+// Sur gedit, supprimer la ligne 421 : @njit(cache=True)
+

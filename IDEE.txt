@@ -1,0 +1,59 @@
+NOM DU PROJET : RunForLife
+
+RÉPARTITION DES TACHES : 
+	Responsable Environnement : Tahar-Berrabah Walid 
+	Responsable Agent : Rakotobe Kalo 
+
+
+PRINCIPE DU PROJET  : 
+	Simulation d'une course d'Agent Coureur ayant pour but d'atteindre l'arrivé face a des Agents Chasseurs et à l'environnement montagneux.
+	Fin d'une boucle lorsque tout les agents Coureurs ont finis la course 
+	
+PLATEFORME :
+	Python
+	Visualisation avec pygame calipso 2D ou "3D" avec superposition d'image
+		
+AGENTS:
+
+	Coureurs : Ravitaillement (case station nourriture/ressource) nécessaire pour se déplacer plus rapidement (Ils ne sont plus soumis a l'environnement). Avantages face aux chasseurs.
+	
+	Chasseurs: Ravitaillement obligatoire pour se deplacer convenablement.
+	
+
+ENVIRONNEMENTS : 
+    Checkpoint des étapes de la course : Zone sur la carte où les coureurs devront passer pour valider leur course
+
+	Territoire montagneux : chaque case possède un facteur de difficulté qui s'applique aux agents.
+        Alitude en fonction de l'état de la case (visuellement foncé = haut)
+
+        Volcan :
+            Montagne pouvant exploser : rependre de la lave sur la carte et tuer tout ce qu'il s'y trouve
+	
+	RavitaillementChass : case apparaissant aleatoirement sur la carte qui a pour but de booster les chasseurs
+    RavitailllementCour : case apparaissant aleatoirement sur la carte qui a pour but de booster les coureurs
+
+	Zone saison : division de la map en plusieur territoires independants avec differentes case environnement uniques.
+
+	
+
+1ER RETOUR PROF : 
+
+	- AJOUTER LE SYSTEME DE STABILITE ENTRE AGENTS ET ENVIRONNEMENTS
+	- AJOUTER LE POINT DE RUPTURE 
+	- AJOUTER UN IMPACT DES AGENTS SUR L'ENVIRONNEMENTS
+	- CREATION DE GRAPHES POUR ETUDIER CES STATS 
+	- AJOUTER LES TOURS DE BOUCLES ET AJOUTS D'UN NOUVEAU COUREURS 
+
+
+
+
+
+
+
+
+
+TACHE A FAIRE : 
+
+-CONCEPTION TOTAL DES 2 AGENTS
+-CONCEPTION TOTAL DE L'ENVIRONNEMENTS 
+-APPORTER DES IDEES SUR LE CONCEPT DE LA SIMULATION ET DES REGLES DU JEUX 
